@@ -174,7 +174,7 @@
 
   <!-- Toggle button -->
   <button
-    v-if="!showDebug && isDevelopment"
+    v-if="!showDebug"
     @click="showDebug = true"
     class="fixed bottom-4 right-4 bg-secondary text-tertiary hover:text-primary px-3 py-1.5 rounded-full text-xs font-mono border border-primary shadow-lg hover:shadow-xl transition-all"
   >
