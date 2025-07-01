@@ -1,0 +1,97 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#1a1a1a" stroke="none"/>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="modelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="uiGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#14b8a6;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="uiGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="uiGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Central model core -->
+  <circle cx="100" cy="100" r="25" fill="url(#modelGradient)" opacity="0.9">
+    <animate attributeName="r" values="25;28;25" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Glowing effect for central core -->
+  <circle cx="100" cy="100" r="30" fill="none" stroke="url(#modelGradient)" stroke-width="1" opacity="0.5">
+    <animate attributeName="r" values="30;40;30" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- UI nodes connected to central model -->
+  <!-- UI Node 1 - Top -->
+  <g>
+    <line x1="100" y1="75" x2="100" y2="40" stroke="#444" stroke-width="2" opacity="0.6"/>
+    <circle cx="100" cy="30" r="15" fill="url(#uiGradient1)" opacity="0.85">
+      <animate attributeName="cy" values="30;25;30" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- UI Node 2 - Top Right -->
+  <g>
+    <line x1="120" y1="85" x2="145" y2="65" stroke="#444" stroke-width="2" opacity="0.6"/>
+    <circle cx="155" cy="55" r="15" fill="url(#uiGradient2)" opacity="0.85">
+      <animate attributeName="cx" values="155;160;155" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- UI Node 3 - Bottom Right -->
+  <g>
+    <line x1="120" y1="115" x2="145" y2="135" stroke="#444" stroke-width="2" opacity="0.6"/>
+    <circle cx="155" cy="145" r="15" fill="url(#uiGradient3)" opacity="0.85">
+      <animate attributeName="cx" values="155;160;155" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- UI Node 4 - Bottom -->
+  <g>
+    <line x1="100" y1="125" x2="100" y2="160" stroke="#444" stroke-width="2" opacity="0.6"/>
+    <circle cx="100" cy="170" r="15" fill="url(#uiGradient1)" opacity="0.85">
+      <animate attributeName="cy" values="170;175;170" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- UI Node 5 - Bottom Left -->
+  <g>
+    <line x1="80" y1="115" x2="55" y2="135" stroke="#444" stroke-width="2" opacity="0.6"/>
+    <circle cx="45" cy="145" r="15" fill="url(#uiGradient2)" opacity="0.85">
+      <animate attributeName="cx" values="45;40;45" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- UI Node 6 - Top Left -->
+  <g>
+    <line x1="80" y1="85" x2="55" y2="65" stroke="#444" stroke-width="2" opacity="0.6"/>
+    <circle cx="45" cy="55" r="15" fill="url(#uiGradient3)" opacity="0.85">
+      <animate attributeName="cx" values="45;40;45" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Data flow visualization -->
+  <g opacity="0.3">
+    <circle cx="100" cy="100" r="50" fill="none" stroke="white" stroke-width="1" stroke-dasharray="5,5">
+      <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="20s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Center highlight -->
+  <circle cx="100" cy="100" r="8" fill="white" opacity="0.9"/>
+</svg>
