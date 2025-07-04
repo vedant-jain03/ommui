@@ -2,7 +2,7 @@
 <template>
   <div
     v-if="showDebug"
-    class="fixed bottom-4 right-4 w-96 max-h-[80vh] bg-secondary border border-primary rounded-lg shadow-lg overflow-hidden flex flex-col"
+    class="fixed bottom-4 right-4 w-96 max-h-[80vh] bg-secondary border border-primary rounded-lg shadow-lg overflow-hidden flex flex-col z-50"
   >
     <!-- Header -->
     <div class="flex justify-between items-center p-4 border-b border-primary">

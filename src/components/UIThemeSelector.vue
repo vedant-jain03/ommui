@@ -1,5 +1,15 @@
 <!-- src/components/UIThemeSelector.vue -->
 <template>
+  <a
+    href="https://www.producthunt.com/products/ommui?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-ommui"
+    target="_blank"
+    ><img
+      src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=987759&theme=dark&t=1751612855399"
+      alt="ommui - Use&#0032;Claude&#0039;s&#0032;beautiful&#0032;interface&#0032;with&#0032;ChatGPT&#0039;s&#0032;brain | Product Hunt"
+      style="width: 150px; height: 54px"
+      width="250"
+      height="54"
+  /></a>
   <div class="relative">
     <Popover>
       <PopoverButton
